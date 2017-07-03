@@ -1,0 +1,2 @@
+<?php
+const VK_API_TOKEN = '9bd34b7e9bd34b7e9bd34b7eeb9b8e41c399bd39bd34b7ec28bc41932b28f8d932cc0d8';
