@@ -218,6 +218,13 @@ class vkAPI
         foreach($chunkedArray as $key=>$item) {
             $users = implode(',', $item);
 
+            $fields = [
+                'has_photo',
+                'sex',
+                'followers_count',
+                'home_town'
+            ];
+
             $ch = curl_init("https://api.vk.com/method/users.get?user_ids=$users&fields=photo_id&v=5.16&access_token=" . VK_API_TOKEN);
 
             curl_setopt($ch, CURLOPT_HEADER, 0);
