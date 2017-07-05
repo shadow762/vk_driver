@@ -15,33 +15,33 @@
 15. geos - координаты фото по карте (вероятно, сложно или невозможно сделать) (list geo)
 16. sex - пол (enum) - есть sex
 17. marital - семейное положение (enum) - есть relation
-18. birthday - день рождения (date)
+18. birthday - день рождения (date) есть - bdate
 19. hometown - родной город (item) - есть home_town
-20. languages - языки (list item)
-21. isrelatives - родственники (обозначены или нет) (bool)
-22. country - страна (item)
+20. languages - языки (list item) - есть personal -> langs
+21. isrelatives - родственники (обозначены или нет) (bool) - есть - массив relatives
+22. country - страна (item) - есть country
 23. ishouse - дом (указан или нет) (bool)
-24. isphone - мобильный телефон  (указан или нет) (bool)
-25. isextraphone - доп. телефон  (указан или нет) (bool)
-26. isskype - skype  (указан или нет) (bool)
-27. activities - деятельность (list item или text)
-28. interests - интересы (list item или text)
-29. favoritemusic - любимая музыка (list item или text)
-30. favoritemovies - любимые фильмы (list item или text)
-31. favoritetvshow - любимые телешоу (list item или text)
-32. favoritebooks - любимые книги (list item или text)
-33. favoritegames - любимые игры (list item или text)
-34. favoritequotes - любимые цитаты (list item или text)
-35. isaboutyourself - о себе (указано или нет) (bool)
-36. university - вуз (item)
-37. faculty - факультет (item)
-38. educationtype - форма обучения (enum)
-39. isstatus - статус (указан или нет) (bool)
-40. school - школа (item)
-41. jobplace - место работы (указан или нет, если указан, то какие) (item)
-42. jobdates - годы работы (указан или нет, если указан, то какие) (date, date)
-43. post - должность (item)
-44. militaryunit - войсковая часть (указан или нет, если указан, то какие) (item)
+24. isphone - мобильный телефон  (указан или нет) (bool) - есть has_mobile
+25. isextraphone - доп. телефон  (указан или нет) (bool) - есть - object contacts - home_phone
+26. isskype - skype  (указан или нет) (bool) - есть - object connections -> skype
+27. activities - деятельность (list item или text) - есть activities
+28. interests - интересы (list item или text) - есть interests
+29. favoritemusic - любимая музыка (list item или text) - есть music
+30. favoritemovies - любимые фильмы (list item или text) - есть movies
+31. favoritetvshow - любимые телешоу (list item или text) - есть tv
+32. favoritebooks - любимые книги (list item или text) - есть books
+33. favoritegames - любимые игры (list item или text) - есть games
+34. favoritequotes - любимые цитаты (list item или text) - есть quotes
+35. isaboutyourself - о себе (указано или нет) (bool) - есть about
+36. university - вуз (item) - есть array universities -> name
+37. faculty - факультет (item) - есть array universities -> faculty_name
+38. educationtype - форма обучения (enum) - есть array universities -> education_form
+39. isstatus - статус (указан или нет) (bool) - есть status
+40. school - школа (item) - есть array schools
+41. jobplace - место работы (указан или нет, если указан, то какие) (item) - есть object career
+42. jobdates - годы работы (указан или нет, если указан, то какие) (date, date) - есть object career
+43. post - должность (item) - есть object career
+44. militaryunit - войсковая часть (указан или нет, если указан, то какие) (item) - military
 45. political - полит. предпочтения (list item или text)
 46. outlook - мировоззрение (list item или text)
 47. lifething - главное в жизни (list item или text)

@@ -222,7 +222,28 @@ class vkAPI
                 'has_photo',
                 'sex',
                 'followers_count',
-                'home_town'
+                'home_town',
+                'bdate',
+                'personal',
+                'relation',
+                'has_mobile',
+                'country',
+                'contacts',
+                'connections',
+                'interests',
+                'activities',
+                'music',
+                'movies',
+                'tv',
+                'books',
+                'games',
+                'quotes',
+                'education',
+                'universities',
+                'status',
+                'schools',
+                'career',
+                'military'
             ];
 
             $ch = curl_init("https://api.vk.com/method/users.get?user_ids=$users&fields=photo_id&v=5.16&access_token=" . VK_API_TOKEN);
